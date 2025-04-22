@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-programozás-1</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+        }
+
+        nav ul li a.active {
+            background-color: #555;
+        }
+
+        .div-content {
+            flex-grow: 1;
+            padding: 1em;
+        }
+
+        aside {
+            background-color: #eee;
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Főoldal</a></li>
+            <li><a href="oldal1.html">Oldal 1</a></li>
+            <li><a href="oldal2.html">Oldal 2</a></li>
+            </ul>
+    </nav>
+
+    <div class="div-content">
+        <h2>Üdvözöllek a Főoldalon!</h2>
+        <p>Ez a főoldal tartalma.</p>
+    </div>
+
+    <aside>
+        <p>Oldalsáv tartalom</p>
+    </aside>
+
+    <footer>
+        <p>Készítette: [Bobály Dániel Bence] [BOKCPM]</p>
+    </footer>
+</body>
+</html>
