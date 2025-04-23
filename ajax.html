@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás-1 Előadás Házi feladat - AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Web-programozás-1 Előadás Házi feladat</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="table.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5</a></li>
+            <li><a href="chart.html">Chart</a></li>
+            <li><a href="ajax.html" class="active">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <p>Oldalsáv</p>
+    </aside>
+    <div id="content">
+        <h2>AJAX adatok kezelése</h2>
+
+        <form id="createForm">
+            <input type="text" id="cname" placeholder="Név" required maxlength="30">
+            <input type="text" id="cheight" placeholder="Magasság" required maxlength="30">
+            <input type="text" id="cweight" placeholder="Súly" required maxlength="30">
+            <button type="submit">Hozzáadás</button>
+        </form>
+
+        <form id="updateForm">
+            <input type="text" id="uid" placeholder="ID" required>
+            <button type="button" id="getData">Adatok betöltése</button>
+            <input type="text" id="uname" placeholder="Név" required maxlength="30">
+            <input type="text" id="uheight" placeholder="Magasság" required maxlength="30">
+            <input type="text" id="uweight" placeholder="Súly" required maxlength="30">
+            <button type="submit" id="fresh" style="display: none;">Frissítés</button>
+        </form>
+
+        <form id="deleteForm">
+            <input type="text" id="did" placeholder="ID törléshez" required>
+            <button type="submit">Törlés</button>
+        </form>
+
+        <button id="loadData">Adatok betöltése</button>
+        <div id="dataOutput"></div>
+    </div>
+    <footer>
+        <p>Készítette: Bobály Dániel Bence, BOCKPM</p>
+    </footer>
+    <script src="ajax.js"></script>
+</body>
+</html>
